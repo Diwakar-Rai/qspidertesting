@@ -19,7 +19,7 @@ const LinkRightPanel = () => {
   //! List for making the right upper panel
   let exampleList = [
     { listName: "Default Link", path: "link" },
-    { listName: "Link in New Tab", path: "button/buttonRightClick" },
+    { listName: "Link in New Tab", path: "link/linkNew" },
     { listName: "Link gives 1XX", path: "button/buttonDoubleClick" },
     { listName: "Link gives 2XX", path: "button/buttonSubmitClick" },
     { listName: "Link gives 3XX", path: "button/buttonDisabled" },

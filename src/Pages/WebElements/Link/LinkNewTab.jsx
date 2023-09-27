@@ -1,9 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { CiMenuKebab } from "react-icons/ci";
-import { Link } from "react-router-dom";
-
-const LinkFirst = () => {
+const LinkNewTab = () => {
   let [click, setClick] = useState(true);
   let [verify, setVerify] = useState(false);
   return (
@@ -12,7 +10,7 @@ const LinkFirst = () => {
         {click ? (
           <section className="flex justify-center absolute w-[100%] top-[-20px]">
             <span className="bg-gradient-to-r from-orange-400 to-orange-600 text-white rounded-full text-center relative py-1 font-bold text-[20px] w-[50%] ">
-              How to Click On Link Text ?
+              How to click on a Link text?
             </span>
           </section>
         ) : null}
@@ -50,10 +48,14 @@ const LinkFirst = () => {
             <span className="font-bold text-black">
               Looking for a Privacy Policy?
             </span>{" "}
-            Check out{" "}
-            <Link to="/link/second-link" className="text-blue-600">
+            Check out
+            <a
+              href="./../newTab.html"
+              target="_blank"
+              className="text-blue-600"
+            >
               Privacy Policy Generator.
-            </Link>
+            </a>
           </p>
           <p className="pb-4 text-[16px] text-slate-600 pe-10">
             The accuracy of the generated document on this website is not
@@ -81,7 +83,7 @@ const LinkFirst = () => {
                   click ? "text-white" : "text-slate-500"
                 } px-4`}
               >
-                How to Click On Link Text ?
+                How to Click On A Link text ?
               </p>
               <CiMenuKebab />
             </aside>
@@ -110,4 +112,4 @@ const LinkFirst = () => {
   );
 };
 
-export default LinkFirst;
+export default LinkNewTab;
